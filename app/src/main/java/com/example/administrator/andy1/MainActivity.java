@@ -1,12 +1,8 @@
 package com.example.administrator.andy1;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import java.lang.reflect.Field;
 
 public class MainActivity extends BaseActivity
 {
@@ -35,28 +31,35 @@ public class MainActivity extends BaseActivity
 
     public  void btnSearch_click()
     {
-        this.log("btnSearch_click: ");
+        log("btnSearch_click: ");
 
         Intent intent = new Intent(MainActivity.this, SearchActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
     }
 
-    public  void btnFavor_click() {
-        this.log("btnSearch_click: ");
+    public  void btnFavor_click()
+    {
+        log("btnSearch_click: ");
 
         Intent intent = new Intent(MainActivity.this, FavoriteActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
     }
 
-    public  void btnAlert_click() {
+    public  void btnAlert_click()
+    {
+        log("btnAlert_click: ");
+
         Intent intent = new Intent(MainActivity.this, AlertActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
     }
 
-    public  void btnSettings_click() {
+    public  void btnSettings_click()
+    {
+        log("btnSettings_click: ");
+
         Intent intent = new Intent(MainActivity.this, AccountActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
