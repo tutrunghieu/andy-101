@@ -26,6 +26,8 @@ public class MainActivity extends BaseActivity
 
     public  void btnHome_click()
     {
+        this.log("btnHome_click: ");
+
         Intent intent = new Intent(MainActivity.this, HomeActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
@@ -33,15 +35,31 @@ public class MainActivity extends BaseActivity
 
     public  void btnSearch_click()
     {
+        this.log("btnSearch_click: ");
+
         Intent intent = new Intent(MainActivity.this, SearchActivity.class);
         intent.putExtra("key", "value");
         this.startActivity(intent);
     }
 
-    public  void btnFavor_click() { }
+    public  void btnFavor_click() {
+        this.log("btnSearch_click: ");
 
-    public  void btnAlert_click() { }
+        Intent intent = new Intent(MainActivity.this, FavoriteActivity.class);
+        intent.putExtra("key", "value");
+        this.startActivity(intent);
+    }
 
-    public  void btnSettings_click() { }
+    public  void btnAlert_click() {
+        Intent intent = new Intent(MainActivity.this, AlertActivity.class);
+        intent.putExtra("key", "value");
+        this.startActivity(intent);
+    }
+
+    public  void btnSettings_click() {
+        Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+        intent.putExtra("key", "value");
+        this.startActivity(intent);
+    }
 
 }
